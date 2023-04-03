@@ -18,10 +18,10 @@ $ sudo softwareupdate --install-rosetta --agree-to-license
 #### 获取 Flutter SDK
 
 - 安装包来获取最新的 stable Flutter SDK：
-  - Intel [`flutter_macos_3.3.8-stable.zip`](https://storage.flutter-io.cn/flutter_infra_release/releases/stable/macos/flutter_macos_3.3.8-stable.zip)
-  - Apple 芯片 [`flutter_macos_arm64_3.3.8-stable.zip`](https://storage.flutter-io.cn/flutter_infra_release/releases/stable/macos/flutter_macos_arm64_3.3.8-stable.zip)  
+    - Intel [`flutter_macos_3.3.8-stable.zip`](https://storage.flutter-io.cn/flutter_infra_release/releases/stable/macos/flutter_macos_3.3.8-stable.zip)
+    - Apple 芯片 [`flutter_macos_arm64_3.3.8-stable.zip`](https://storage.flutter-io.cn/flutter_infra_release/releases/stable/macos/flutter_macos_arm64_3.3.8-stable.zip)
 
-    想要获取到其他版本的安装包，请参阅 [SDK 版本列表](https://flutter.cn/docs/development/tools/sdk/releases) 页面
+      想要获取到其他版本的安装包，请参阅 [SDK 版本列表](https://flutter.cn/docs/development/tools/sdk/releases) 页面
 - 将文件解压到目标路径, 比如:
 
     ```bash
@@ -41,12 +41,12 @@ $ sudo softwareupdate --install-rosetta --agree-to-license
 ### Windows 操作系统上安装和配置
 
 - 点击下方的安装包，获取 stable 发行通道的 Flutter SDK 最新版本：
-  - [flutter_windows_3.3.8-stable.zip](https://storage.flutter-io.cn/flutter_infra_release/releases/stable/windows/flutter_windows_3.3.8-stable.zip)
-  - 要查看其他发行通道和以往的版本，请参阅 [SDK 版本列表](https://flutter.cn/docs/development/tools/sdk/releases) 页面
+    - [flutter_windows_3.3.8-stable.zip](https://storage.flutter-io.cn/flutter_infra_release/releases/stable/windows/flutter_windows_3.3.8-stable.zip)
+    - 要查看其他发行通道和以往的版本，请参阅 [SDK 版本列表](https://flutter.cn/docs/development/tools/sdk/releases) 页面
 - 将压缩包解压，然后把其中的 `flutter` 目录整个放在你想放置 `Flutter SDK` 的路径中（例如 `C:\src\flutter`）
 - 更新 `path` 环境变量，在开始菜单的搜索功能键入`「env」`，然后选择 `编辑系统环境变量`。在 **`用户变量`** 一栏中，检查是否有 **`Path`** 这个条目：
-  - 如果存在这个条目，以 `;` 分隔已有的内容，加入 `flutter\bin` 目录的完整路径。
-  - 如果不存在的话，在用户环境变量中创建一个新的 Path 变量，然后将 `flutter\bin` 所在的完整路径作为新变量的值
+    - 如果存在这个条目，以 `;` 分隔已有的内容，加入 `flutter\bin` 目录的完整路径。
+    - 如果不存在的话，在用户环境变量中创建一个新的 Path 变量，然后将 `flutter\bin` 所在的完整路径作为新变量的值
 <!--rehype:className=style-timeline-->
 
 如果你不想安装指定版本的安装包。可以忽略步骤 `1` 和 `2`。从 `GitHub` 上的 `Flutter repo` 获取源代码，并根据需要，切换到指定的分支或标签
@@ -112,7 +112,7 @@ Text.rich(TextSpan(
 ))
 ```
 
-### DefaultTextStyle 文本默认样式  
+### DefaultTextStyle 文本默认样式
 <!--rehype:wrap-class=row-span-4-->
 
 ```dart
@@ -242,7 +242,7 @@ TextButton.icon(
       - images/aaa.png
     ```
 
-    注意: 由于 yaml 文件对缩进严格，所以必须严格按照每一层两个空格的方式进行缩进，此处 assets 前面应有两个空格。
+  注意: 由于 yaml 文件对缩进严格，所以必须严格按照每一层两个空格的方式进行缩进，此处 assets 前面应有两个空格。
 
 - 加载该图片
 
@@ -253,7 +253,7 @@ TextButton.icon(
     );
     ```
 
-    Image 也提供了一个快捷的构造函数 `Image.asset` 用于从 `asset` 中加载、显示图片：
+  Image 也提供了一个快捷的构造函数 `Image.asset` 用于从 `asset` 中加载、显示图片：
 
     ```dart
     Image.asset("images/aaa.png",
@@ -616,7 +616,7 @@ Flex 的用法与 `Row` 或 `Column` 类似，但只需要额外传入 `directio
 ```dart
 Flex(
   direction: Axis.vertiacl,
-  children；[
+  children: [
     Fluterlogo(),
     Fluterlogo(),
     Fluterlogo(),
@@ -630,9 +630,9 @@ Flex(
 Flex(
   dirction: Axis.horizontal,
   children: [
-    Flutterlogo(),
-    Flutterlogo(),
-    Flutterlogo(),
+    FlutterLogo(),
+    FlutterLogo(),
+    FlutterLogo(),
   ],
 ),
 ```
